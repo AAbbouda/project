@@ -1,0 +1,5 @@
+const cityInput = document.queryselector(".city-input");
+const searchButton = document.queryselector(".search-btn);
+const locationButton = document.queryselector(".location-btn");
+const currentWeatherDiv= document.queryselector(".current-weather");
+const weathrcardsDiv = document.queryselector(".weather-cards");

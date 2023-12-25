@@ -1,0 +1,42 @@
+<?php
+
+
+$Enter city name=$_Request['Enter city name'];
+$Current location=$_Request['current location'];
+
+
+
+
+if(isset($post['search']))
+{
+
+$host="localhost";
+$user="root";
+$password="";
+$db="weather";
+
+
+
+
+$conn =mysqli_connect($host,$user,$passwaoed,$dp);
+
+
+$insert="insert into weather values('$Enter city name','current location')";
+
+mysqli_query(conn,insert);
+
+if($conn){
+
+echo("<h1 style='color:green;'>City found!</h1>");
+}
+else{
+echo("<h1 style='color:red;'>City not found!</h1>");
+}
+
+
+
+
+
+
+}
+?>
